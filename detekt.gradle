@@ -1,0 +1,14 @@
+apply plugin: "io.gitlab.arturbosch.detekt"
+
+detekt {
+    toolVersion = "$versions.detekt"
+    input = files("app/src/main/java", "app/src/main/kotlin")
+    parallel = true
+    config = files("$rootDir/detekt-config.yml")
+    reports {
+        html {
+            enabled = true
+            destination = file("app/build/reports/detekt.html")
+        }
+    }
+}

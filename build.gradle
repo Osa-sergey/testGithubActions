@@ -10,7 +10,9 @@ buildscript {
             mockitoKotlin: "2.2.0",
  //           powermock: "2.0.7",
  //           powermockJunit5: "1.6.4"
-            hamcrest: "2.2"
+            hamcrest: "2.2",
+            ktlint: "9.3.0",
+            detekt: "1.11.0-RC2"
 
     ]
 
@@ -49,10 +51,23 @@ buildscript {
         classpath "com.android.tools.build:gradle:4.0.1"
         classpath "org.jetbrains.kotlin:kotlin-gradle-plugin:$versions.kotlin"
         classpath "de.mannodermaus.gradle.plugins:android-junit5:1.6.1.0"
+        classpath "io.gitlab.arturbosch.detekt:detekt-gradle-plugin:$versions.detekt"
+    }
+}
+
+plugins {
+    id "org.jlleitschuh.gradle.ktlint" version( "9.3.0")
+}
+
+subprojects {
+    apply plugin: "org.jlleitschuh.gradle.ktlint"
+    ktlint {
+        debug = false
     }
 }
 
 allprojects {
+    apply from: "$rootDir/detekt.gradle"
     repositories {
         google()
         jcenter()
