@@ -8,12 +8,10 @@ buildscript {
             junit: "5.6.2",
             mockito: "3.4.6", // в случае использования powermock использовать 2.28.2
             mockitoKotlin: "2.2.0",
- //           powermock: "2.0.7",
- //           powermockJunit5: "1.6.4"
             hamcrest: "2.2",
             ktlint: "9.3.0",
-            detekt: "1.11.0-RC2"
-
+            detekt: "1.11.0-RC2",
+            dokka: "0.9.16"
     ]
 
     ext.jupiter = [
@@ -32,12 +30,6 @@ buildscript {
             kotlin: "com.nhaarman.mockitokotlin2:mockito-kotlin:$versions.mockitoKotlin"
     ]
 
-/**    ext.powerMockito  = [
-            junit5: "org.powermock:powermock-module-junit5:$versions.powermockJunit5",
-            mockito2: "org.powermock:powermock-api-mockito2:$versions.powermock"
-    ]
-**/
-
     ext.hamcrest = [
             hamcrest: "org.hamcrest:hamcrest:$versions.hamcrest"
     ]
@@ -52,6 +44,7 @@ buildscript {
         classpath "org.jetbrains.kotlin:kotlin-gradle-plugin:$versions.kotlin"
         classpath "de.mannodermaus.gradle.plugins:android-junit5:1.6.1.0"
         classpath "io.gitlab.arturbosch.detekt:detekt-gradle-plugin:$versions.detekt"
+        classpath "org.jetbrains.dokka:dokka-gradle-plugin:$versions.dokka"
     }
 }
 
@@ -68,6 +61,7 @@ subprojects {
 
 allprojects {
     apply from: "$rootDir/detekt.gradle"
+    apply from: "$rootDir/dokka.gradle"
     repositories {
         google()
         jcenter()

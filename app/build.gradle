@@ -58,10 +58,6 @@ dependencies {
         exclude group: 'org.mockito', module: 'mockito-core'
     })
 
-    // Power Mockito
-//    testImplementation powerMockito.junit5
-//    testImplementation powerMockito.mockito2
-
     // Hamcrest
     implementation hamcrest.hamcrest
 

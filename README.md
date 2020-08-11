@@ -11,3 +11,8 @@
   - JUnit 5
   - Mockito 3
   - Hamcrest 2
+- Analyze tools
+  - Ktlint
+  - Detekt
+- Documentation
+  - Dokka
