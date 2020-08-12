@@ -1,0 +1,28 @@
+<component name="InspectionProjectProfileManager">
+  <profile version="1.0">
+    <option name="myName" value="Project Default" />
+    <inspection_tool class="AndroidLintAdapterViewChildren" enabled="true" level="ERROR" enabled_by_default="true" />
+    <inspection_tool class="AndroidLintClickableViewAccessibility" enabled="true" level="ERROR" enabled_by_default="true" />
+    <inspection_tool class="AndroidLintContentDescription" enabled="true" level="ERROR" enabled_by_default="true" />
+    <inspection_tool class="AndroidLintHardcodedText" enabled="true" level="ERROR" enabled_by_default="true" />
+    <inspection_tool class="AndroidLintKeyboardInaccessibleWidget" enabled="true" level="ERROR" enabled_by_default="true" />
+    <inspection_tool class="AndroidLintLambdaLast" enabled="true" level="ERROR" enabled_by_default="true" />
+    <inspection_tool class="AndroidLintNoHardKeywords" enabled="true" level="ERROR" enabled_by_default="true" />
+    <inspection_tool class="AndroidLintRtlHardcoded" enabled="true" level="ERROR" enabled_by_default="true" />
+    <inspection_tool class="AndroidLintTypographyEllipsis" enabled="true" level="ERROR" enabled_by_default="true" />
+    <inspection_tool class="AndroidLintWeekBasedYear" enabled="true" level="ERROR" enabled_by_default="true" />
+    <inspection_tool class="ClassName" enabled="true" level="ERROR" enabled_by_default="true" />
+    <inspection_tool class="ConstPropertyName" enabled="true" level="ERROR" enabled_by_default="true" />
+    <inspection_tool class="EnumEntryName" enabled="true" level="ERROR" enabled_by_default="true" />
+    <inspection_tool class="FunctionName" enabled="true" level="ERROR" enabled_by_default="true" />
+    <inspection_tool class="LocalVariableName" enabled="true" level="ERROR" enabled_by_default="true" />
+    <inspection_tool class="LongLine" enabled="true" level="WARNING" enabled_by_default="true" />
+    <inspection_tool class="ObjectPropertyName" enabled="true" level="ERROR" enabled_by_default="true" />
+    <inspection_tool class="PackageName" enabled="true" level="ERROR" enabled_by_default="true" />
+    <inspection_tool class="PrivatePropertyName" enabled="true" level="ERROR" enabled_by_default="true" />
+    <inspection_tool class="PropertyName" enabled="true" level="ERROR" enabled_by_default="true" />
+    <inspection_tool class="Reformat" enabled="true" level="ERROR" enabled_by_default="true" />
+    <inspection_tool class="TestFunctionName" enabled="true" level="ERROR" enabled_by_default="true" />
+    <inspection_tool class="XmlWrongFileType" enabled="true" level="ERROR" enabled_by_default="true" />
+  </profile>
+</component>
