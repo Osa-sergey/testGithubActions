@@ -47,20 +47,12 @@ dependencies {
     testRuntimeOnly jupiter.engine
     testImplementation jupiter.params
 
-    // Mockito
-    testImplementation mockito.core
-    testImplementation mockito.jupiter
-    androidTestImplementation mockito.android
-
-    // Mockito-Kotlin
-    testImplementation mockitoKotlin.kotlin
-    androidTestImplementation(mockitoKotlin.kotlin, {
-        exclude group: 'org.mockito', module: 'mockito-core'
-    })
-
     // Hamcrest
     implementation hamcrest.hamcrest
 
-    androidTestImplementation 'androidx.test.espresso:espresso-core:3.2.0'
+    // Mockk
+    testImplementation mockk.mockk
+
+    androidTestImplementation espresso.core
 
 }

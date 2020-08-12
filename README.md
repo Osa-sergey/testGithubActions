@@ -9,8 +9,9 @@
 
 - Testing tools
   - JUnit 5
-  - Mockito 3
+  - Mockk
   - Hamcrest 2
+  - Espresso
 - Analyze tools
   - Ktlint
   - Detekt
